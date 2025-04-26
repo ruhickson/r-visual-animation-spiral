@@ -1,0 +1,18 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Output files
+*.html
+*.mp4
+*.webm
+*.gif
+
+# System specific
+.DS_Store
+Thumbs.db
+
+# Data files (uncomment if you want to exclude data)
+# *.csv 
