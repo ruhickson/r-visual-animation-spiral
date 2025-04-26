@@ -4,14 +4,13 @@ This project creates an interactive visualization of temperature data using R, s
 
 ## Animated Visualization
 
-<video width="100%" controls>
-  <source src="temperature_spiral.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Temperature Spiral Animation](temperature_spiral.gif)
+
+*MP4 to GIF conversion by [CloudConvert](https://cloudconvert.com/mp4-to-gif)*
 
 ## Interactive Visualization
 
-<iframe src="temperature_spiral_interactive.html" width="100%" height="600px" frameborder="0"></iframe>
+[🌐 Open the interactive HTML visualization](temperature_spiral_interactive.html)
 
 ## Project Description
 
@@ -23,6 +22,7 @@ This visualization uses temperature data to create a spiral pattern that shows t
 - `land_ocean_index.csv`: Temperature data source
 - `temperature_spiral_interactive.html`: Interactive visualization
 - `temperature_spiral.mp4`: Video version of the visualization
+- `temperature_spiral.gif`: Animated GIF version
 
 ## How to Use
 
