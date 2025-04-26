@@ -13,7 +13,6 @@
 # Exceptions for our visualization files
 !temperature_spiral_interactive.html
 !temperature_spiral.mp4
-!temperature_spiral.gif
 
 # System specific
 .DS_Store
