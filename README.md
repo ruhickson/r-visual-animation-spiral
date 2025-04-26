@@ -2,6 +2,10 @@
 
 This project creates an interactive visualization of temperature data using R, showing the spiral pattern of global temperature changes over time.
 
+## Animated Visualization
+
+![Temperature Spiral Animation](temperature_spiral.gif)
+
 ## Interactive Visualization
 
 <iframe src="temperature_spiral_interactive.html" width="100%" height="600px" frameborder="0"></iframe>
