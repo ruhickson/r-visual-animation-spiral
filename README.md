@@ -1,6 +1,6 @@
 # Temperature Spiral Visualization
 
-This project creates an interactive visualization of temperature data using R, showing the spiral pattern of global temperature changes over time.
+This project creates an interactive visualization of the change in global surface temperature data between 1880-2024 using R, showing the spiral pattern of global temperature increase over time.
 
 ## Animated Visualization
 
@@ -28,8 +28,8 @@ This visualization uses temperature data to create a spiral pattern that shows t
 
 1. Clone this repository
 2. Open `temperature_spiral_interactive.html` in a web browser to view the interactive visualization
-3. Run `plot.R` in R to generate new visualizations
+3. Run `animated-spiral.R` in R to generate new visualizations
 
 ## Data Source
 
-The temperature data comes from the land-ocean temperature index, providing a comprehensive view of global temperature changes. 
+The temperature data comes from [NASA's land-ocean temperature index](https://climate.nasa.gov/vital-signs/global-temperature/?intent=121), providing a comprehensive view of global temperature changes. 
