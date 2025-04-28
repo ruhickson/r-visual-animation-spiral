@@ -57,9 +57,10 @@ base_plot <- ggplot() +
     plot.subtitle = element_text(color = "white"),
     legend.text = element_text(color = "white"),
     legend.title = element_text(color = "white"),
-    legend.background = element_rect(fill = "grey10")
+    legend.background = element_rect(fill = "grey10"),
+    plot.margin = margin(0, 0, 0, 0, "pt")
   ) +
-  labs(title = "Temperature Anomalies (1880-2024)")
+  labs(title = "Global Temperature Changes (1880-2024)")
 
 # Create interactive plotly version
 p_interactive <- ggplotly(base_plot, tooltip = "text") %>%
@@ -74,7 +75,7 @@ htmlwidgets::saveWidget(p_interactive, "temperature_spiral_interactive.html")
 
 # Create animated version
 p_animated <- base_plot +
-  labs(subtitle = "Year: {frame_time}") +
+  labs(subtitle = "Year: {frame_along}") +
   transition_reveal(Year) +
   shadow_wake(wake_length = 1, alpha = TRUE) +
   ease_aes('linear')
@@ -89,12 +90,12 @@ anim <- animate(p_animated,
                res = 120)
 anim_save("temperature_spiral.mp4", anim)
 
-# Save as WebM
+# If you want to save as GIF instead:
 anim <- animate(p_animated, 
                nframes = 300,
                fps = 30,
                width = 800, 
                height = 800,
-               renderer = av_renderer(vcodec = "libvpx-vp9"),
+               renderer = gifski_renderer(),
                res = 120)
-anim_save("temperature_spiral.webm", anim)
+anim_save("temperature_spiral.gif", anim)
